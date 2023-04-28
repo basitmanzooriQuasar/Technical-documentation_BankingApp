@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Linking CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Linking google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Technical Documentation</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>JS Documentation</header>
+      <ul>
+        <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+        <li><a href="#Interface" class="nav-link">Interface</a></li>
+        <li><a href="#Inheritance" class="nav-link">Inheritance</a></li>
+        <li><a href="#Encapsulation" class="nav-link">Encapsulation</a></li>
+        <li><a href="#Polymorphism" class="nav-link">Polymorphism</a></li>
+        <li><a href="#Bank_as_Interface" class="nav-link">Bank as Interface</a></li>
+        <li><a href="#SBI_implements_Bank" class="nav-link">SBI implements Bank</a></li>
+        <li><a href="#HDFC_implements_Bank" class="nav-link">HDFC implements Bank</a></li>
+        <li><a href="#Main_function" class="nav-link">Main function</a></li>
+      </ul>
+    </nav>
+    <div id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <p>
+          The banking application developed using core Java is a sophisticated
+          platform that offers a comprehensive range of functionalities to
+          banking giants like SBI and HDFC. The application has been designed
+          using the fundamental principles of object-oriented programming such
+          as interface, inheritance, polymorphism, and encapsulation.
+        </p>
+        <p>
+          The Bank interface is the cornerstone of the application. It provides
+          a blueprint for the implementation of features such as balance
+          inquiry, money deposit, withdrawal, password reset, and interest rate
+          calculation. The use of inheritance ensures that these features can be
+          inherited by banks, thereby reducing the need for code duplication and
+          promoting code reuse.
+        </p>
+        <p>
+          The application also uses polymorphism to modify the attributes of the
+          Bank interface, thereby enabling banks to customize the application
+          according to their specific requirements. For instance, the
+          application can be tailored to reflect the unique interest rates
+          offered by different banks.
+        </p>
+        <p>
+          Encapsulation is another crucial feature of the application that
+          offers data security and privacy. It ensures that sensitive
+          information such as account details, passwords, and transaction
+          history are stored securely and are not accessible to unauthorized
+          individuals.
+        </p>
+        <p>
+          Overall, the banking application developed using core Java is an
+          efficient and secure solution that offers a seamless banking
+          experience to customers. It is a testament to the power of
+          object-oriented programming and demonstrates how these fundamental
+          principles can be used to develop robust and scalable applications.
+        </p>
+        
+      </section> 
+      <section class="main-section" id="Interface">
+        <header>Interface</header>
+        <p>
+          In object-oriented programming, an interface is a blueprint for a
+          class or a group of related classes. It defines a set of methods or
+          behaviors that the class or classes implementing the interface must
+          provide. The interface does not provide any implementation of the
+          methods, but merely specifies the signature or the prototype of the
+          methods that the implementing classes must define.
+        </p>
+        <p>
+          The purpose of an interface is to provide a common protocol or a
+          contract for communication between different classes. By defining a
+          common interface, multiple classes can interact with each other
+          without knowing the internal details of each other's implementation.
+          This helps to promote code reuse, maintainability, and flexibility.
+        </p>
+        <p>
+          In Java, an interface is defined using the interface keyword, and the
+          methods declared in the interface are implicitly abstract and public.
+          A class can implement one or more interfaces using the implements
+          keyword, and it must provide an implementation for all the methods
+          declared in the interface. A class can also extend another class and
+          implement one or more interfaces at the same time.
+        </p>
+        <p>
+          In summary, an interface is a powerful feature of object-oriented
+          programming that allows for abstraction, decoupling, and polymorphism.
+          It defines a contract between classes and provides a mechanism for
+          loose coupling and high cohesion.
+        </p>
+      </section>
+      <section class="main-section" id="Inheritance">
+        <header>Inheritance</header>
+        <p>
+          Inheritance is a fundamental concept of object-oriented programming
+          (OOP) that allows new classes to be based on existing classes, thereby
+          inheriting the properties and behavior of the parent class. The parent
+          class is also known as the superclass or base class, and the child
+          class is known as the subclass or derived class.
+        </p>
+        <p>
+          Inheritance allows the reuse of code, reducing duplication and
+          improving code maintainability. The subclass can inherit attributes,
+          methods, and properties from the superclass, and it can also add its
+          own attributes and methods or override the existing ones. This allows
+          for code customization and flexibility.
+        </p>
+        <p>
+          In Java, inheritance is achieved using the extends keyword. A subclass
+          can extend only one superclass, but a superclass can have multiple
+          subclasses. The subclass inherits all the non-private members of the
+          superclass, including its constructors, methods, and instance
+          variables.
+        </p>
+        <p>
+          Inheritance also facilitates polymorphism, which allows objects of
+          different classes to be treated as if they belong to the same class.
+          This enables code flexibility and reusability and can make code more
+          modular and easier to maintain.
+        </p>
+        <p>
+          However, inheritance can also lead to code complexity and tight
+          coupling between classes if not used judiciously. Therefore, it is
+          essential to design class hierarchies carefully and consider other OOP
+          principles such as composition, aggregation, and interface
+          implementation when creating classes.
+        </p>
+      </section>
+      <section class="main-section" id="Encapsulation">
+        <header>Encapsulation</header>
+        <p>
+          Encapsulation is a fundamental concept of object-oriented programming
+          (OOP) that refers to the bundling of data and methods within a single
+          unit, such as a class. The primary purpose of encapsulation is to
+          ensure that the data and methods are not accessible outside the class
+          except through the defined methods, also known as accessors or
+          mutators.
+        </p>
+        <p>
+          In Java, encapsulation is achieved using the access modifiers -
+          private, public, protected, and default (also known as
+          package-private). The private modifier restricts access to the class
+          itself, while the public modifier allows unrestricted access from
+          outside the class. The protected modifier allows access from within
+          the same package or from a subclass, and the default modifier allows
+          access within the same package.
+        </p>
+        <p>
+          Encapsulation has several benefits. It provides data security by
+          preventing unauthorized access to the data, which can help prevent
+          data corruption or tampering. It also enhances code maintainability
+          and reusability by making it easier to change the internal
+          implementation of the class without affecting other parts of the code.
+        </p>
+        <p>
+          Encapsulation also promotes code readability and reduces code
+          complexity by hiding the implementation details from the outside
+          world. It enables the creation of more modular and flexible code,
+          which can be easier to understand and maintain.
+        </p>
+        <p>
+          Overall, encapsulation is an essential principle of OOP that can help
+          create more secure, maintainable, and flexible code.
+        </p>
+      </section>
+      <section class="main-section" id="Polymorphism">
+        <header>Polymorphism</header>
+        <p>
+          Polymorphism is a fundamental concept of object-oriented programming
+          (OOP) that allows objects of different classes to be treated as if
+          they belong to the same class. Polymorphism enables code flexibility
+          and reusability and can make code more modular and easier to maintain.
+        </p>
+        <p>
+          In Java, polymorphism can be achieved through method overloading and
+          method overriding. Method overloading involves defining multiple
+          methods with the same name but different parameters in a class. The
+          compiler determines which method to call based on the arguments passed
+          at runtime.
+        </p>
+        <p>
+          Method overriding involves redefining a method in the subclass with
+          the same name, return type, and parameters as in the superclass. When
+          the method is called using a reference variable of the superclass, the
+          subclass implementation is executed.
+        </p>
+        <p>
+          Polymorphism also involves the use of inheritance and interfaces. A
+          superclass reference variable can be used to refer to objects of a
+          subclass, allowing for code reuse and flexibility. An interface
+          reference variable can be used to refer to objects of different
+          classes that implement the same interface, enabling loose coupling and
+          high cohesion.
+        </p>
+        <p>
+          Polymorphism can also be achieved through generic programming, which
+          involves creating classes or methods that can work with different data
+          types, allowing for greater code reuse and flexibility.
+        </p>
+        <p>
+          Overall, polymorphism is a powerful concept that allows for greater
+          code flexibility, reusability, and maintainability in object-oriented
+          programming. It enables objects of different classes to be treated as
+          if they belong to the same class, providing a mechanism for code
+          modularity and extensibility.
+        </p>
+      </section>
+      <section class="main-section" id="Bank_as_Interface">
+        <header>Bank as Interface</header>
+        <p>
+          The Bank interface is a set of methods that define the basic
+          functionalities that a bank should provide. The interface specifies
+          methods for checking account balance, adding and withdrawing money,
+          changing password, and calculating the total interest. These methods
+          take input parameters such as the password, amount of money, old and
+          new password, and the number of years for calculating the interest.
+        </p>
+        <p>
+          In addition to the specified methods, the interface also mentions a
+          comment regarding transferring money within the same bank. While this
+          functionality is not explicitly defined in the interface, it suggests
+          that it is an important feature that banks should provide.
+        </p>
+        <p>
+          Implementing this interface allows banks, such as SBI and HDFC, to
+          define their own classes and implement these methods according to
+          their specific requirements. This interface serves as a blueprint for
+          defining the basic functionality of a bank and enables code reuse and
+          flexibility.
+        </p>
+      </section>
+      <section class="main-section" id="SBI_implements_Bank">
+        <header>SBI implements Bank</header>
+        <p>
+          The SBI class is an implementation of the Bank interface and provides
+          the functionality specific to the State Bank of India (SBI). This
+          class defines methods for checking balance, adding and withdrawing
+          money, changing the password, and calculating the total interest for a
+          given number of years. Here are some points to understand the SBI
+          class:
+        </p>
+        <ul>
+          <li>
+            The SBI class has private instance variables, including balance,
+            account number, password, and name.
+          </li>
+          <li>
+            The constructor of the SBI class takes in the initial balance,
+            password, and account holder name as parameters and generates a
+            random UUID to assign to the account number.
+          </li>
+          <li>
+            The checkBalance method overrides the method from the Bank interface
+            and checks if the password provided matches the account password
+            before returning the account balance.
+          </li>
+          <li>
+            The addMoney method overrides the Bank interface method and adds the
+            provided amount to the account balance, returning a message that
+            confirms the transaction.
+          </li>
+          <li>
+            The withdrawMoney method overrides the Bank interface method and
+            withdraws the provided amount from the account balance if the
+            password matches and the account has sufficient funds.
+          </li>
+          <li>
+            The changePassword method overrides the Bank interface method and
+            changes the password if the old password matches.
+          </li>
+          <li>
+            The calculateTotalInterest method overrides the Bank interface
+            method and calculates the total interest for the account balance for
+            the given number of years at the SBI rate of interest.
+          </li>
+        </ul>
+        <p>
+          Overall, the SBI class provides the necessary functionality to
+          interact with an SBI bank account and demonstrates the use of
+          interface methods to define common functionality across different bank
+          implementations.
+        </p>
+      </section>
+      <section class="main-section" id="HDFC_implements_Bank">
+        <header>HDFC implements Bank</header>
+        <p>
+            HDFC Bank is another implementation of the Bank interface, similar to SBI class. HDFC class also has the following attributes and methods:
+        </p>
+        <p>Attributes:</p>
+        <ul>
+            <li><strong>balance</strong>: an integer to store the current balance of the account.
+            </li>
+            <li><strong>accNumber</strong>: a string to store the account number generated by a random unique identifier</li>
+            <li><strong>password</strong>: a string to store the password of the account.</li>
+            <li><strong>name</strong>: a string to store the name of the account holder.</li>
+            <li><strong>rateOfInterest</strong>: a static double variable to store the rate of interest offered by the bank.</li>
+        </ul>
+        <p>Methods:</p>
+        <ul>
+            <li><strong>checkBalance(String password)</strong>: a method to check the balance of the account by passing the password. It returns the balance if the password is correct, otherwise, it returns -1.
+            </li>
+            <li><strong>addMoney(int money)</strong>: a method to add money to the account. It takes an integer argument as money and updates the balance accordingly. It returns a string message indicating the transaction details.</li>
+            <li><strong>withdrawMoney(int drawMoney, String password)</strong>: a method to withdraw money from the account. It takes an integer argument as the amount to withdraw and the account password. It checks if the password is correct and the balance is sufficient to withdraw the amount. If the conditions are satisfied, it updates the balance and returns a success message; otherwise, it returns an error message.</li>
+            <li><strong>changePassword(String oldPassword, String newPassword)</strong>: a method to change the password of the account. It takes two string arguments as old and new passwords. If the old password matches the current password, it updates the password and returns a success message; otherwise, it returns an error message.</li>
+            <li><strong>calculateTotalInterest(int years)</strong>: a method to calculate the total interest based on the balance and the rate of interest over the specified number of years. It takes an integer argument as the number of years and returns the calculated interest.</li>
+        </ul>
+        <p>
+            Overall, the HDFC class is another implementation of the Bank interface that provides functionality for checking balance, adding and withdrawing money, changing password, and calculating interest.
+        </p>
+      </section>
+      <section class="main-section" id="Main_function">
+        <header>Main function</header>
+        <p>
+            The application allows users to choose between two banks, SBI and HDFC, and perform basic banking operations such as checking account balance, adding and withdrawing money, calculating interest, and changing passwords.
+        </p>
+        <p>
+            The main class contains the main method and the choose_bank method, which displays the options for the user to choose between the two banks. Depending on the user's choice, the create_accountSBI or create_accountHDFC method is called to create a new account for the respective bank.
+        </p>
+        <p>
+            Both create_accountSBI and create_accountHDFC methods prompt the user to enter their name, initial balance, and password, and create a new account object for the respective bank with the user's input.
+        </p>
+        <p>
+            After creating the account, the user is presented with a menu of options to choose from, such as checking the account balance, adding or withdrawing money, calculating interest, changing the account password, or exiting the application.
+        </p>
+        <p>
+            Based on the user's choice, the corresponding method is called to perform the desired operation. For example, if the user chooses to check their balance, the checkBalance method is called and the account balance is displayed. Similarly, if the user chooses to add or withdraw money, the addMoney or withdrawMoney method is called with the user's input.
+        </p>
+        <p>
+            Overall, this application provides a simple example of how to implement basic banking operations in Java using object-oriented programming concepts.
+        </p>
+        <code>
+            System.out.println(".......Thank you for visiting our Bank.......");
+        </code>
+        <br>
+        <code>
+            System.out.println(".......Thank you for visiting our Bank.......");
+        </code>
+        <br>
+        <code>
+            System.out.println(".......Thank you for visiting our Bank.......");
+        </code>
+        <br>
+        <code>
+            System.out.println(".......Thank you for visiting our Bank.......");
+        </code>
+        <br>
+        <code>
+            System.out.println(".......Thank you for visiting our Bank.......");
+        </code>
+      </section>
+    </div>
+  </body>
+</html>
